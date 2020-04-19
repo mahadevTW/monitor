@@ -1,6 +1,11 @@
 Monitoring App serves both Assets and Api
 
 make sure you have go and node installed on local machine. 
+**clone repo into GOPATH/src**
+```shell script
+git clone https://github.com/mahadevTW/monitor.git
+cd monitor
+```
 
 **Build UI**
 ```shell script
