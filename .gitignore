@@ -1,3 +1,5 @@
 .idea
 .vscode
-web/node_modules
+web/node_modules/*/*.*
+web/build
+vendor

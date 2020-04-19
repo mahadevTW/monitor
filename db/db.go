@@ -11,7 +11,17 @@ func GetDbSchema() *memdb.DBSchema {
 					"id": &memdb.IndexSchema{
 						Name:    "id",
 						Unique:  true,
-						Indexer: &memdb.StringFieldIndex{Field: "URL"},
+						Indexer: &memdb.StringFieldIndex{Field: "Id"},
+					},
+				},
+			},
+			"health": &memdb.TableSchema{
+				Name: "health",
+				Indexes: map[string]*memdb.IndexSchema{
+					"id": &memdb.IndexSchema{
+						Name:    "id",
+						Unique:  true,
+						Indexer: &memdb.StringFieldIndex{Field: "EndPointId"},
 					},
 				},
 			},
